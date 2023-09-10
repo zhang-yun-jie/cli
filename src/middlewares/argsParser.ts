@@ -1,4 +1,4 @@
-import cliArgs from '@pawelgalazka/cli-args'
+import cliArgs from '@zhangyunjie/cli-args'
 
 import { Middleware } from '../index'
 

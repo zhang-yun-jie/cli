@@ -1,6 +1,6 @@
 {
-  "name": "@pawelgalazka/cli",
-  "version": "2.0.3",
+  "name": "@zhangyunjie/cli",
+  "version": "2.0.4",
   "description": "Functions based CLI framework",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -8,7 +8,7 @@
     "clean": "rm -rf ./lib",
     "build": "tsc",
     "lint": "tslint -c tslint.json 'src/*.ts' 'test/**/*.ts'",
-    "test": "yarn run lint && yarn build && jest --coverage",
+    "test": "npm run lint && npm build && jest --coverage",
     "test:unit": "jest ./tests/unit/*.spec.ts",
     "test:e2e": "jest ./tests/e2e/*.e2e.spec.ts",
     "sandbox:simple": "./tests/sandbox/simple.js",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pawelgalazka/cli.git"
+    "url": "git+https://github.com/zhang-yun-jie/cli.git"
   },
   "publishConfig": {
     "access": "public"
@@ -40,13 +40,10 @@
   ],
   "author": "Pawel Galazka",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pawelgalazka/cli/issues"
-  },
-  "homepage": "https://github.com/pawelgalazka/cli#readme",
+  "homepage": "https://github.com/zhang-yun-jie/cli#readme",
   "dependencies": {
-    "@pawelgalazka/cli-args": "1.1.3",
-    "@pawelgalazka/middleware": "1.0.0",
+    "@zhangyunjie/cli-args": "1.1.3",
+    "@zhangyunjie/middleware": "1.0.0",
     "chalk": "2.4.2",
     "lodash": "4.17.15"
   },

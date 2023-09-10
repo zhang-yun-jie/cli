@@ -11,7 +11,7 @@ Functions based CLI framework
 ## Quick Start
 
 ```sh
-$ npm install @pawelgalazka/cli --save
+$ npm install @zhangyunjie/cli --save
 $ touch yourScript.js                    # add your script file
 $ chmod a+x ./yourScript.js              # add execute permissions
 ```
@@ -19,7 +19,7 @@ $ chmod a+x ./yourScript.js              # add execute permissions
 `yourScript.js`:
 ```js
 #!/usr/bin/env node
-const { cli } = require('@pawelgalazka/cli')
+const { cli } = require('@zhangyunjie/cli')
 
 cli((options, name = '', surname = '') => {
   console.log(`Hello ${name} ${surname}!`)
@@ -44,7 +44,7 @@ YAY!
 
 ```js
 #!/usr/bin/env node
-const { cli, withHelp } = require('@pawelgalazka/cli')
+const { cli, withHelp } = require('@zhangyunjie/cli')
 
 cli(withHelp((options, name = '', surname = '') => {
   console.log(`Hello ${name} ${surname}!`)
@@ -66,7 +66,7 @@ about options and params:
 
 ```js
 #!/usr/bin/env node
-const { cli, help } = require('@pawelgalazka/cli')
+const { cli, help } = require('@zhangyunjie/cli')
 
 function command(options, name = '', surname = '') {
   console.log(`Hello ${name} ${surname}!`)
@@ -99,7 +99,7 @@ Options:
 ## Add commands
 
 ```js
-const { cli, help } = require('@pawelgalazka/cli')
+const { cli, help } = require('@zhangyunjie/cli')
 
 help(cmd1, 'Description of first command')
 
@@ -202,7 +202,7 @@ To add custom middleware:
 
 ```js
 #!/usr/bin/env node
-const { cli, useMiddlewares } = require('@pawelgalazka/cli')
+const { cli, useMiddlewares } = require('@zhangyunjie/cli')
 
 const customMiddleware = next => ({ 
     options, 
@@ -261,7 +261,7 @@ $ npm install ts-node --save-dev
 `yourScript.ts`:
 ```ts
 #!/usr/bin/env ts-node
-import { cli } from '@pawelgalazka/cli'
+import { cli } from '@zhangyunjie/cli'
 
 cli((options, name = '', surname = '') => {
   console.log(`Hello ${name} ${surname}!`)
