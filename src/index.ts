@@ -1,7 +1,7 @@
 import {
   middleware,
   Middleware as GenericMiddleware
-} from '@zhangyunjie/middleware'
+} from '@yun-jie/middleware'
 import { useMiddlewares } from './middlewares'
 
 export { useMiddlewares } from './middlewares'

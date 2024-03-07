@@ -1,4 +1,4 @@
-import { Middleware as GenericMiddleware } from '@zhangyunjie/middleware';
+import { Middleware as GenericMiddleware } from '@yun-jie/middleware';
 export { useMiddlewares } from './middlewares';
 export { help, withHelp } from './middlewares/helper';
 export { rawArgs } from './middlewares/rawArgsParser';

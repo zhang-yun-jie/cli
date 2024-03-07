@@ -1,6 +1,6 @@
 {
-  "name": "@zhangyunjie/cli",
-  "version": "2.0.4",
+  "name": "@yun-jie/cli",
+  "version": "2.0.3",
   "description": "Functions based CLI framework",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -42,8 +42,8 @@
   "license": "MIT",
   "homepage": "https://github.com/zhang-yun-jie/cli#readme",
   "dependencies": {
-    "@zhangyunjie/cli-args": "1.1.3",
-    "@zhangyunjie/middleware": "1.0.0",
+    "@yun-jie/cli-args": "1.1.3",
+    "@yun-jie/middleware": "1.0.0",
     "chalk": "2.4.2",
     "lodash": "4.17.15"
   },
